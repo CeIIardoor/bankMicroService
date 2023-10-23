@@ -23,7 +23,7 @@ public class BankAccountServiceApplication {
 				BankAccount bankAccount=BankAccount.builder()
 						.id(String.valueOf(i+1))
 						.balence(1000+Math.random()*9000)
-						.accountType(AccountType.valueOf(Math.random()>0.5?"CURRENT_ACCOUNT":"SAVINGS_ACCOUNT"))
+						.type(AccountType.valueOf(Math.random()>0.5?"CURRENT_ACCOUNT":"SAVINGS_ACCOUNT"))
 						.currency("MAD")
 						.createdAt(new java.util.Date())
 						.build();
